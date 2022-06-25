@@ -4,3 +4,8 @@
 print("         Guild Wars          ")
 print(" Hello & welcome to Ascalon  ")
 start_game = input("Do you wish to be a Hero? (Y/N)")
+
+if start_game == "Y":
+    pre_searing()
+elif start_game == "N":
+    print("Goodbye")
