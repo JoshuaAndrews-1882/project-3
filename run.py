@@ -204,8 +204,8 @@ def dunes():
     story = open("prophecies/desert/dunes/dunes.text", "r")
     print(story.read())
     while True:
-        print("Player Score: ",player)
-        print("Enemy Score: ",enemy)
+        print("Player Score: ", player)
+        print("Enemy Score: ", enemy)
         quest7 = input("Pick your weapon! Rock, Paper or Scissors!: \n")
         game_choices = ["ROCK", "PAPER", "SCISSORS"]
         enemy_choice = random.choice(game_choices)
@@ -239,11 +239,17 @@ def dunes():
             print(story.read())
 
         if player == 5:
-            print("You win")
+            print()
+            story = open("prophecies/desert/dunes/dunes-w.text", "r")
+            print(story.read())
             elona()
         elif enemy == 5:
-            print("You lose")
+            print()
+            story = open("prophecies/desert/dunes/dunes-l.text", "r")
+            print(story.read())
             intro()
+
+#elona
 
 
 
