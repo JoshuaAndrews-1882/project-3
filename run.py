@@ -247,7 +247,6 @@ def dunes():
             story = open("prophecies/desert/dunes/dunes-l.text", "r")
             print(story.read())
             intro()
-            """
 
 # elona 
 def elona():
@@ -285,10 +284,54 @@ def elona():
             story = open("prophecies/desert/elona/elona-l.text", "r")
             print(story.read())
             intro()
+            """
 
+# thirsty
+def thirsty():
 
+    player = 0
+    enemy = 0
+
+    print()
+    story = open("prophecies/desert/thirsty/thirsty.text", "r")
+    print(story.read())
+    while True:
+        print("Player Score: ", player)
+        print("Enemy Score: ", enemy)
+        quest11 = input("Pick Heads or Tails! \n")
+        coin_choices = ["HEADS", "TAILS"]
+        coin_flip = random.choice(coin_choices)
+        if quest11.upper().strip() == coin_flip:
+            print("You guess the correct side of the coin!")
+            player += 1
+        elif quest11.upper().strip() == "HEADS":
+            if coin_flip == "TAILS":
+                print("You didn't guess the correct side of the coin!")
+                enemy += 1
+        elif quest11.upper().strip() == "TAILS":
+            if coin_flip == "HEADS":
+                print("You didn't guess the correct side of the coin!")
+                enemy += 1
         
+        else:
+            print()
+            story = open("settings/coin.text", "r")
+            print(story.read())
+        
+        if player == 6:
+            print()
+            story = open("prophecies/desert/thirsty/thirsty-w.text", "r")
+            print(story.read())
+            dragon()
+        elif enemy == 6:
+            print()
+            story = open("prophecies/desert/thirsty/thirsty-l.text", "r")
+            print(story.read())
+            intro()
+
+
+ 
 # title
 print("         Guild Wars          ")
 print(" Hello & welcome to Ascalon  ")
-elona()
+thirsty()
