@@ -1,5 +1,5 @@
 import random
-
+"""
 # intro
 def intro():
     while True:
@@ -17,7 +17,6 @@ def intro():
             print()
 
 # PROPHECIES
-
 # ascalon
 def pre_ascalon():
     while True:
@@ -248,8 +247,8 @@ def dunes():
             story = open("prophecies/desert/dunes/dunes-l.text", "r")
             print(story.read())
             intro()
-
-# elona
+"""
+# elona 
 def elona():
 
     enemy_number = random.randint(1, 200)
@@ -259,23 +258,20 @@ def elona():
     story = open("prophecies/desert/elona/elona.text", "r")
     print(story.read())
     while True:
-        print("Attempts: ", attempt)
-        quest10 = int(input("Enter a number between 1 to 200: \n"))
-        if quest10 == enemy_number:
-            print()
-            story = open("prophecies/desert/thirsty/dunes-w.text", "r")
-            print(story.read())
-            thirsty()
-        elif quest10 < enemy_number:
-            print()
-            print("Too low")
-            attempt += 1
-        elif quest10 > enemy_number:
-            print()
-            print("Too high")
-            attempt += 1
-
-        else:
+        try:
+            print("Attempts: ", attempt)
+            quest10 = int(input("Enter a number between 1 to 200: \n"))
+            if quest10 == enemy_number:
+                print("you win")
+            elif quest10 < enemy_number:
+                print()
+                print("Too low")
+                attempt += 1
+            elif quest10 > enemy_number:
+                print()
+                print("Too high")
+                attempt += 1
+        except ValueError:
             print()
             story = open("settings/rps.text", "r")
             print(story.read())
@@ -288,4 +284,4 @@ def elona():
 # title
 print("         Guild Wars          ")
 print(" Hello & welcome to Ascalon  ")
-intro()
+elona()
