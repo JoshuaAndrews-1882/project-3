@@ -149,7 +149,26 @@ def chosen():
             print(story.read())
 
 # magumma
-
+def magumma():
+    while True:
+        print()
+        story = open("prophecies/magumma/magumma.text", "r")
+        print(story.read())
+        quest6 = input("Do you kill the Shining Blade? (Y/N)\n")
+        if quest6.upper().strip() == "N":
+            print()
+            story = open("prophecies/magumma/magumma-n.text", "r")
+            print(story.read())
+            vizier()
+        elif quest6.upper().strip() == "Y":
+            print()
+            story = open("prophecies/magumma/magumma-y.text", "r")
+            print(story.read())
+            intro()
+        else:
+            print()
+            story = open("settings/yesno.text", "r")
+            print(story.read())
 
 # title
 print("         Guild Wars          ")
