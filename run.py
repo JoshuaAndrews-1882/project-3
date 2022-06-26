@@ -1,3 +1,5 @@
+import random
+
 # intro
 def intro():
     while True:
@@ -186,11 +188,64 @@ def vizier():
             print()
             story = open("prophecies/vizier/vizier-y.text", "r")
             print(story.read())
-            desert()
+            dunes()
         else:
             print()
             story = open("settings/yesno.text", "r")
             print(story.read())
+
+# desert
+def dunes():
+
+    player = 0
+    enemy = 0
+
+    print()
+    story = open("prophecies/desert/dunes/dunes.text", "r")
+    print(story.read())
+    while True:
+        print("Player Score: ",player)
+        print("Enemy Score: ",enemy)
+        quest7 = input("Pick your weapon! Rock, Paper or Scissors!: \n")
+        game_choices = ["ROCK", "PAPER", "SCISSORS"]
+        enemy_choice = random.choice(game_choices)
+        if quest7.upper().strip() == enemy_choice:
+            print(f"You and the enemy threw {quest7}. Keep fighting!")
+        elif quest7.upper().strip() == "ROCK":
+            if enemy_choice == "SCISSORS":
+                print("Rock smashes scissors! You win!")
+                player += 1
+            else:
+                print("Paper covers rock! You lose.")
+                enemy += 1
+        elif quest7.upper().strip() == "PAPER":
+            if enemy_choice == "ROCK":
+                print("Paper covers rock! You win!")
+                player += 1
+            else:
+                print("Scissors cuts paper! You lose.")
+                enemy += 1
+        elif quest7.upper().strip() == "SCISSORS":
+            if enemy_choice == "PAPER":
+                print("Scissors cuts paper! You win!")
+                player += 1
+            else:
+                print("Rock smashes scissors! You lose.")
+                enemy += 1
+
+        else:
+            print()
+            story = open("settings/rps.text", "r")
+            print(story.read())
+
+        if player == 5:
+            print("You win")
+            elona()
+        elif enemy == 5:
+            print("You lose")
+            intro()
+
+
 
 # title
 print("         Guild Wars          ")
