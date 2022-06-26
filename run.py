@@ -247,7 +247,8 @@ def dunes():
             story = open("prophecies/desert/dunes/dunes-l.text", "r")
             print(story.read())
             intro()
-"""
+            """
+
 # elona 
 def elona():
 
@@ -262,7 +263,10 @@ def elona():
             print("Attempts: ", attempt)
             quest10 = int(input("Enter a number between 1 to 200: \n"))
             if quest10 == enemy_number:
-                print("you win")
+                print()
+                story = open("prophecies/desert/elona/elona-w.text", "r")
+                print(story.read())
+                thirsty()
             elif quest10 < enemy_number:
                 print()
                 print("Too low")
@@ -273,12 +277,15 @@ def elona():
                 attempt += 1
         except ValueError:
             print()
-            story = open("settings/rps.text", "r")
+            story = open("settings/number.text", "r")
             print(story.read())
 
         if attempt == 10:
             print()
+            story = open("prophecies/desert/elona/elona-l.text", "r")
+            print(story.read())
             intro()
+
 
         
 # title
