@@ -154,17 +154,39 @@ def magumma():
         print()
         story = open("prophecies/magumma/magumma.text", "r")
         print(story.read())
-        quest6 = input("Do you kill the Shining Blade? (Y/N)\n")
-        if quest6.upper().strip() == "N":
+        quest7 = input("Do you kill the Shining Blade? (Y/N)\n")
+        if quest7.upper().strip() == "N":
             print()
             story = open("prophecies/magumma/magumma-n.text", "r")
             print(story.read())
             vizier()
-        elif quest6.upper().strip() == "Y":
+        elif quest7.upper().strip() == "Y":
             print()
             story = open("prophecies/magumma/magumma-y.text", "r")
             print(story.read())
             intro()
+        else:
+            print()
+            story = open("settings/yesno.text", "r")
+            print(story.read())
+
+# vizier
+def vizier():
+    while True:
+        print()
+        story = open("prophecies/vizier/vizier.text", "r")
+        print(story.read())
+        quest7 = input("Will you get the sceptor for Vizier? (Y/N)\n")
+        if quest7.upper().strip() == "N":
+            print()
+            story = open("prophecies/vizier/vizier-n.text", "r")
+            print(story.read())
+            intro()
+        elif quest7.upper().strip() == "Y":
+            print()
+            story = open("prophecies/vizier/vizier-y.text", "r")
+            print(story.read())
+            desert()
         else:
             print()
             story = open("settings/yesno.text", "r")
