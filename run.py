@@ -178,13 +178,13 @@ def vizier():
         print()
         story = open("prophecies/vizier/vizier.text", "r")
         print(story.read())
-        quest7 = input("Will you get the sceptor for Vizier? (Y/N)\n")
-        if quest7.upper().strip() == "N":
+        quest8 = input("Will you get the sceptor for Vizier? (Y/N)\n")
+        if quest8.upper().strip() == "N":
             print()
             story = open("prophecies/vizier/vizier-n.text", "r")
             print(story.read())
             intro()
-        elif quest7.upper().strip() == "Y":
+        elif quest8.upper().strip() == "Y":
             print()
             story = open("prophecies/vizier/vizier-y.text", "r")
             print(story.read())
@@ -206,26 +206,26 @@ def dunes():
     while True:
         print("Player Score: ", player)
         print("Enemy Score: ", enemy)
-        quest7 = input("Pick your weapon! Rock, Paper or Scissors!: \n")
+        quest9 = input("Pick your weapon! Rock, Paper or Scissors!: \n")
         game_choices = ["ROCK", "PAPER", "SCISSORS"]
         enemy_choice = random.choice(game_choices)
-        if quest7.upper().strip() == enemy_choice:
-            print(f"You and the enemy threw {quest7}. Keep fighting!")
-        elif quest7.upper().strip() == "ROCK":
+        if quest9.upper().strip() == enemy_choice:
+            print(f"You and the enemy threw {quest9}. Keep fighting!")
+        elif quest9.upper().strip() == "ROCK":
             if enemy_choice == "SCISSORS":
                 print("Rock smashes scissors! You win!")
                 player += 1
             else:
                 print("Paper covers rock! You lose.")
                 enemy += 1
-        elif quest7.upper().strip() == "PAPER":
+        elif quest9.upper().strip() == "PAPER":
             if enemy_choice == "ROCK":
                 print("Paper covers rock! You win!")
                 player += 1
             else:
                 print("Scissors cuts paper! You lose.")
                 enemy += 1
-        elif quest7.upper().strip() == "SCISSORS":
+        elif quest9.upper().strip() == "SCISSORS":
             if enemy_choice == "PAPER":
                 print("Scissors cuts paper! You win!")
                 player += 1
@@ -249,10 +249,42 @@ def dunes():
             print(story.read())
             intro()
 
-#elona
+# elona
+def elona():
 
+    enemy_number = random.randint(1, 200)
+    attempt = 0
+    
+    print()
+    story = open("prophecies/desert/elona/elona.text", "r")
+    print(story.read())
+    while True:
+        print("Attempts: ", attempt)
+        quest10 = int(input("Enter a number between 1 to 200: \n"))
+        if quest10 == enemy_number:
+            print()
+            story = open("prophecies/desert/thirsty/dunes-w.text", "r")
+            print(story.read())
+            thirsty()
+        elif quest10 < enemy_number:
+            print()
+            print("Too low")
+            attempt += 1
+        elif quest10 > enemy_number:
+            print()
+            print("Too high")
+            attempt += 1
 
+        else:
+            print()
+            story = open("settings/rps.text", "r")
+            print(story.read())
 
+        if attempt == 10:
+            print()
+            intro()
+
+        
 # title
 print("         Guild Wars          ")
 print(" Hello & welcome to Ascalon  ")
