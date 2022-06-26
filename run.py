@@ -2,9 +2,9 @@
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 def pre():
-    print()
-    print("King Adelbern calls for all heroes to help fight Charr")
-    quest1 = input("do you join him? (Y/N)  ")
+    f = open("story/pre-ascalon/pre.text", "r")
+    print(f.read())
+    quest1 = input("Do you accept? (Y/N)  ")
     if quest1 == "N":
         print("You die")
     elif quest1 == "Y":
