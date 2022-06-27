@@ -284,7 +284,6 @@ def elona():
             story = open("prophecies/desert/elona/elona-l.text", "r")
             print(story.read())
             intro()
-            """
 
 # thirsty
 def thirsty():
@@ -328,10 +327,37 @@ def thirsty():
             story = open("prophecies/desert/thirsty/thirsty-l.text", "r")
             print(story.read())
             intro()
+"""
+
+# dragon
+def dragon():
+
+    total = 0
+
+    print()
+    story = open("prophecies/desert/dragon/dragon.text", "r")
+    print(story.read())
+    while True:
+        print()
+        input("Press any key when you wish to roll the dice")
+        dice1 = random.randint(1, 6)
+        dice2 = random.randint(1, 6)
+        dice3 = random.randint(1, 6)
+        dice = [dice1, dice2, dice3]
+        total_dice = sum(dice)
+        total += total_dice
+        print("Total: ", total)
+        if total >= 10:
+            print("Win")
+            southern()
+        if total < 10:
+            print("Lose")
+            intro()
+
 
 
  
 # title
 print("         Guild Wars          ")
 print(" Hello & welcome to Ascalon  ")
-thirsty()
+dragon()
