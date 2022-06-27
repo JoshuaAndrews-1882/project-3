@@ -3,6 +3,10 @@ import random
 
 # intro
 def intro():
+    """
+    This is the intro to game asking the user if they want to
+    play or not.
+    """
     while True:
         print()
         start_game = input("Do you wish to be a Hero? (Y/N)\n")
@@ -21,6 +25,11 @@ def intro():
 # PROPHECIES
 # ascalon
 def pre_ascalon():
+    """
+    This is the first quest for the player with a simple
+    yes or no question.
+    If the wrong answer is chosen the game restarts.
+    """
     while True:
         print()
         story = open("prophecies/pre-ascalon/pre.text", "r")
@@ -44,6 +53,9 @@ def pre_ascalon():
 
 
 def post_ascalon():
+    """
+    This is the second quest with a yes or no question
+    """
     while True:
         print()
         story = open("prophecies/post-ascalon/post.text", "r")
@@ -67,6 +79,9 @@ def post_ascalon():
 
 # shiverpeaks
 def shiverpeaks():
+    """
+    This is the third quest with a simple yes or no question 
+    """
     while True:
         print()
         story = open("prophecies/shiverpeaks/shiver.text", "r")
@@ -90,6 +105,9 @@ def shiverpeaks():
 
 # kryta
 def kryta():
+    """
+    This is the fourth quest with a simple yes or no question
+    """
     while True:
         print()
         story = open("prophecies/kryta/kryta.text", "r")
@@ -113,6 +131,9 @@ def kryta():
 
 # dorian
 def dorian():
+    """
+    This is the fifth quest, with a simple yes or no question
+    """
     while True:
         print()
         story = open("prophecies/dorian/dorian.text", "r")
@@ -136,6 +157,9 @@ def dorian():
 
 # chosen
 def chosen():
+    """
+    This is the sixth quest, with a simple yes or no question
+    """
     while True:
         print()
         story = open("prophecies/chosen/chosen.text", "r")
@@ -159,6 +183,9 @@ def chosen():
 
 # magumma
 def magumma():
+    """
+    This is the seventh quest, with a yes or no question
+    """
     while True:
         print()
         story = open("prophecies/magumma/magumma.text", "r")
@@ -182,6 +209,9 @@ def magumma():
 
 # vizier
 def vizier():
+    """
+    This is the eigth quest, with a simple yes or no question
+    """
     while True:
         print()
         story = open("prophecies/vizier/vizier.text", "r")
@@ -205,6 +235,11 @@ def vizier():
 
 # desert
 def dunes():
+    """
+    This is the first quest that contains a game to pass.
+    The game is rock, paper and scissors and they player
+    must acheive 5 wins before the enemy to win.
+    """
 
     player = 0
     enemy = 0
@@ -261,7 +296,11 @@ def dunes():
 
 # elona
 def elona():
-
+    """
+    This is the second quest with a game.
+    It requires the player to guess the enemies number
+    in 10 guesses or less to win.
+    """
     enemy_number = random.randint(1, 200)
     attempt = 0
 
@@ -299,6 +338,13 @@ def elona():
 
 # thirsty
 def thirsty():
+    """
+    This is the third quest with a game.
+    It requires the player to guess heads or
+    tails correctly 6 times to win.
+    If they guess incorrectly 6 times first
+    then they lose.
+    """
 
     player = 0
     enemy = 0
@@ -343,7 +389,11 @@ def thirsty():
 
 # dragon
 def dragon():
-
+    """
+    This is the fourt quest with a game to win.
+    They player has to roll 3 dices and get higher
+    than 10 to win.
+    """
     total = 0
 
     print()
@@ -373,6 +423,9 @@ def dragon():
 
 # southern
 def southern():
+    """
+    This quest is a simple yes or no question
+    """
     while True:
         print()
         story = open("prophecies/southern/southern.text", "r")
@@ -396,6 +449,9 @@ def southern():
 
 # fire
 def fire():
+    """
+    This quest is a simple yes or no question
+    """
     while True:
         print()
         story = open("prophecies/fire/fire.text", "r")
@@ -419,6 +475,11 @@ def fire():
 
 # lich
 def lich():
+    """
+    This quest requires the player to win
+    rock, paper and scissors 10 times before
+    the enemy to win the game.
+    """
     player = 0
     enemy = 0
 
@@ -470,6 +531,7 @@ def lich():
             story = open("prophecies/lich/lich-l.text", "r")
             print(story.read())
             intro()
+
 
 # title
 print("         Guild Wars          ")
