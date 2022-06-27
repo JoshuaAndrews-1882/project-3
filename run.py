@@ -327,7 +327,6 @@ def thirsty():
             story = open("prophecies/desert/thirsty/thirsty-l.text", "r")
             print(story.read())
             intro()
-"""
 
 # dragon
 def dragon():
@@ -357,13 +356,32 @@ def dragon():
             story = open("prophecies/desert/dragon/dragon-l.text", "r")
             print(story.read())
             intro()
-
+"""
 # southern
-
+def southern():
+    while True:
+        print()
+        story = open("prophecies/southern/southern.text", "r")
+        print(story.read())
+        quest12 = input("Do you infuse your armor? (Y/N)\n")
+        if quest12.upper().strip() == "N":
+            print()
+            story = open("prophecies/southern/southern-n.text", "r")
+            print(story.read())
+            intro()
+        elif quest12.upper().strip() == "Y":
+            print()
+            story = open("prophecies/southern/southern-y.text", "r")
+            print(story.read())
+            fire()
+        else:
+            print()
+            story = open("settings/yesno.text", "r")
+            print(story.read())
 
 
  
 # title
 print("         Guild Wars          ")
 print(" Hello & welcome to Ascalon  ")
-dragon()
+southern()
