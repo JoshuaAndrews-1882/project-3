@@ -1,5 +1,6 @@
 import random
 
+
 # intro
 def intro():
     while True:
@@ -15,6 +16,7 @@ def intro():
             story = open("settings/yesno.text", "r")
             print(story.read())
             print()
+
 
 # PROPHECIES
 # ascalon
@@ -40,6 +42,7 @@ def pre_ascalon():
             print(story.read())
             print()
 
+
 def post_ascalon():
     while True:
         print()
@@ -60,6 +63,7 @@ def post_ascalon():
             print()
             story = open("settings/yesno.text", "r")
             print(story.read())
+
 
 # shiverpeaks
 def shiverpeaks():
@@ -83,6 +87,7 @@ def shiverpeaks():
             story = open("settings/yesno.text", "r")
             print(story.read())
 
+
 # kryta
 def kryta():
     while True:
@@ -104,6 +109,7 @@ def kryta():
             print()
             story = open("settings/yesno.text", "r")
             print(story.read())
+
 
 # dorian
 def dorian():
@@ -127,6 +133,7 @@ def dorian():
             story = open("settings/yesno.text", "r")
             print(story.read())
 
+
 # chosen
 def chosen():
     while True:
@@ -148,6 +155,7 @@ def chosen():
             print()
             story = open("settings/yesno.text", "r")
             print(story.read())
+
 
 # magumma
 def magumma():
@@ -171,6 +179,7 @@ def magumma():
             story = open("settings/yesno.text", "r")
             print(story.read())
 
+
 # vizier
 def vizier():
     while True:
@@ -192,6 +201,7 @@ def vizier():
             print()
             story = open("settings/yesno.text", "r")
             print(story.read())
+
 
 # desert
 def dunes():
@@ -248,12 +258,13 @@ def dunes():
             print(story.read())
             intro()
 
-# elona 
+
+# elona
 def elona():
 
     enemy_number = random.randint(1, 200)
     attempt = 0
-    
+
     print()
     story = open("prophecies/desert/elona/elona.text", "r")
     print(story.read())
@@ -285,6 +296,7 @@ def elona():
             print(story.read())
             intro()
 
+
 # thirsty
 def thirsty():
 
@@ -311,12 +323,12 @@ def thirsty():
             if coin_flip == "HEADS":
                 print("You didn't guess the correct side of the coin!")
                 enemy += 1
-        
+
         else:
             print()
             story = open("settings/coin.text", "r")
             print(story.read())
-        
+
         if player == 6:
             print()
             story = open("prophecies/desert/thirsty/thirsty-w.text", "r")
@@ -327,6 +339,7 @@ def thirsty():
             story = open("prophecies/desert/thirsty/thirsty-l.text", "r")
             print(story.read())
             intro()
+
 
 # dragon
 def dragon():
@@ -356,7 +369,8 @@ def dragon():
             story = open("prophecies/desert/dragon/dragon-l.text", "r")
             print(story.read())
             intro()
-            
+
+
 # southern
 def southern():
     while True:
@@ -379,8 +393,9 @@ def southern():
             story = open("settings/yesno.text", "r")
             print(story.read())
 
+
 # fire
-def fire ():
+def fire():
     while True:
         print()
         story = open("prophecies/fire/fire.text", "r")
@@ -403,7 +418,7 @@ def fire ():
 
 
 # lich
-def lich ():
+def lich():
     player = 0
     enemy = 0
 
