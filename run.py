@@ -339,7 +339,7 @@ def dragon():
     print(story.read())
     while True:
         print()
-        input("Press any key when you wish to roll the dice")
+        input("Press any key when you wish to roll the dice \n")
         dice1 = random.randint(1, 6)
         dice2 = random.randint(1, 6)
         dice3 = random.randint(1, 6)
@@ -348,11 +348,17 @@ def dragon():
         total += total_dice
         print("Total: ", total)
         if total >= 10:
-            print("Win")
+            print()
+            story = open("prophecies/desert/dragon/dragon-w.text", "r")
+            print(story.read())
             southern()
         if total < 10:
-            print("Lose")
+            print()
+            story = open("prophecies/desert/dragon/dragon-l.text", "r")
+            print(story.read())
             intro()
+
+# southern
 
 
 
