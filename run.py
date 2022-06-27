@@ -356,7 +356,7 @@ def dragon():
             story = open("prophecies/desert/dragon/dragon-l.text", "r")
             print(story.read())
             intro()
-"""
+            
 # southern
 def southern():
     while True:
@@ -379,9 +379,84 @@ def southern():
             story = open("settings/yesno.text", "r")
             print(story.read())
 
+# fire
+def fire ():
+    while True:
+        print()
+        story = open("prophecies/fire/fire.text", "r")
+        print(story.read())
+        quest13 = input("and open the Door of Komalie? (Y/N)\n")
+        if quest13.upper().strip() == "N":
+            print()
+            story = open("prophecies/fire/fire-n.text", "r")
+            print(story.read())
+            intro()
+        elif quest13.upper().strip() == "Y":
+            print()
+            story = open("prophecies/fire/fire-y.text", "r")
+            print(story.read())
+            lich()
+        else:
+            print()
+            story = open("settings/yesno.text", "r")
+            print(story.read())
+ """
 
- 
+# lich
+def lich ():
+    player = 0
+    enemy = 0
+
+    print()
+    story = open("prophecies/lich/lich.text", "r")
+    print(story.read())
+    while True:
+        print("Player Score: ", player)
+        print("Enemy Score: ", enemy)
+        quest13 = input("Pick your weapon! Rock, Paper or Scissors!: \n")
+        game_choices = ["ROCK", "PAPER", "SCISSORS"]
+        enemy_choice = random.choice(game_choices)
+        if quest13.upper().strip() == enemy_choice:
+            print(f"You and the Lich threw {quest9}. Keep fighting!")
+        elif quest13.upper().strip() == "ROCK":
+            if enemy_choice == "SCISSORS":
+                print("Rock smashes scissors! You win!")
+                player += 1
+            else:
+                print("Paper covers rock! You lose.")
+                enemy += 1
+        elif quest13.upper().strip() == "PAPER":
+            if enemy_choice == "ROCK":
+                print("Paper covers rock! You win!")
+                player += 1
+            else:
+                print("Scissors cuts paper! You lose.")
+                enemy += 1
+        elif quest13.upper().strip() == "SCISSORS":
+            if enemy_choice == "PAPER":
+                print("Scissors cuts paper! You win!")
+                player += 1
+            else:
+                print("Rock smashes scissors! You lose.")
+                enemy += 1
+
+        else:
+            print()
+            story = open("settings/rps.text", "r")
+            print(story.read())
+
+        if player == 10:
+            print()
+            story = open("prophecies/lich/lich-w.text", "r")
+            print(story.read())
+            intro()
+        elif enemy == 10:
+            print()
+            story = open("prophecies/lich/lich-l.text", "r")
+            print(story.read())
+            intro()
+
 # title
 print("         Guild Wars          ")
 print(" Hello & welcome to Ascalon  ")
-southern()
+fire()
