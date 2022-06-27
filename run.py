@@ -23,7 +23,8 @@ def intro():
 
 
 # PROPHECIES
-# ascalon
+
+# pre-ascalon
 def pre_ascalon():
     """
     This is the first quest for the player with a simple
@@ -52,6 +53,7 @@ def pre_ascalon():
             print()
 
 
+# post-ascalon
 def post_ascalon():
     """
     This is the second quest with a yes or no question
@@ -80,7 +82,7 @@ def post_ascalon():
 # shiverpeaks
 def shiverpeaks():
     """
-    This is the third quest with a simple yes or no question 
+    This is the third quest with a simple yes or no question
     """
     while True:
         print()
