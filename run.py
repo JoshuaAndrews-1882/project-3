@@ -1,5 +1,5 @@
 import random
-"""
+
 # intro
 def intro():
     while True:
@@ -400,7 +400,7 @@ def fire ():
             print()
             story = open("settings/yesno.text", "r")
             print(story.read())
- """
+
 
 # lich
 def lich ():
@@ -417,7 +417,7 @@ def lich ():
         game_choices = ["ROCK", "PAPER", "SCISSORS"]
         enemy_choice = random.choice(game_choices)
         if quest13.upper().strip() == enemy_choice:
-            print(f"You and the Lich threw {quest9}. Keep fighting!")
+            print(f"You and the Lich threw {quest13}. Keep fighting!")
         elif quest13.upper().strip() == "ROCK":
             if enemy_choice == "SCISSORS":
                 print("Rock smashes scissors! You win!")
@@ -459,4 +459,4 @@ def lich ():
 # title
 print("         Guild Wars          ")
 print(" Hello & welcome to Ascalon  ")
-fire()
+intro()
