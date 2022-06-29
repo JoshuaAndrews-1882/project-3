@@ -84,7 +84,6 @@ def post_ascalon():
             print()
             story = open("prophecies/post-ascalon/post-y.text", "r")
             print(story.read())
-            play_again = input("Do you want to play again? (Y/N) \n")
             while True:
                 play_again = input("Restart this quest? (Y/N) \n")
                 if play_again.upper().strip() == "Y":
