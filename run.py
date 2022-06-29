@@ -9,7 +9,7 @@ def intro():
     """
     while True:
         print()
-        start_game = input("Do you wish to be a Hero? (Y/N)\n")
+        start_game = input("          Do you wish to be a Hero? (Y/N)\n")
         if start_game.upper().strip() == "Y":
             pre_ascalon()
         elif start_game.upper().strip() == "N":
@@ -689,6 +689,13 @@ def lich():
 
 
 # title
-print("         Guild Wars          ")
-print(" Hello & welcome to Ascalon  ")
+print("""
+  _____       _ _     _  __          __            
+ / ____|     (_) |   | | \ \        / /            
+| |  __ _   _ _| | __| |  \ \  /\  / /_ _ _ __ ___ 
+| | |_ | | | | | |/ _` |   \ \/  \/ / _` | '__/ __|
+| |__| | |_| | | | (_| |    \  /\  / (_| | |  \__ \ 
+ \_____|\__,_|_|_|\__,_|     \/  \/ \__,_|_|  |___/
+\n """)
+print("            Hello & welcome to Ascalon \n")
 intro()
