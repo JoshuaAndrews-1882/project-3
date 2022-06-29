@@ -1,11 +1,10 @@
 import random
 import os
 
-
 os.system("")
 
 
-class style():
+class Style():
     """
     Text colors
     """
@@ -22,14 +21,14 @@ def intro():
     play or not.
     Logo created using https://www.ascii-art-generator.org/
     """
-    print(style.YELLOW + """
+    print(Style.YELLOW + """
   _____       _ _     _  __          __            
  / ____|     (_) |   | | \ \        / /            
 | |  __ _   _ _| | __| |  \ \  /\  / /_ _ _ __ ___ 
 | | |_ | | | | | |/ _` |   \ \/  \/ / _` | '__/ __|
 | |__| | |_| | | | (_| |    \  /\  / (_| | |  \__ \ 
  \_____|\__,_|_|_|\__,_|     \/  \/ \__,_|_|  |___/
-\n """ + style.RESET)
+\n """ + Style.RESET)
     print("            Hello & Welcome to Prophecies \n")
     while True:
         print()
@@ -381,8 +380,8 @@ def dunes():
     story = open("prophecies/desert/dunes/dunes.text", "r")
     print(story.read())
     while True:
-        print(style.GREEN + "Player Score: " + style.RESET, player)
-        print(style.RED + "Enemy Score: " + style.RESET, enemy)
+        print(Style.GREEN + "Player Score: " + Style.RESET, player)
+        print(Style.RED + "Enemy Score: " + Style.RESET, enemy)
         quest9 = input("Pick your weapon! Rock, Paper or Scissors!: \n")
         game_choices = ["ROCK", "PAPER", "SCISSORS"]
         enemy_choice = random.choice(game_choices)
@@ -455,7 +454,7 @@ def elona():
     print(story.read())
     while True:
         try:
-            print(style.GREEN + "Attempts: " + style.RESET, attempt)
+            print(Style.GREEN + "Attempts: " + Style.RESET, attempt)
             quest10 = int(input("Enter a number between 1 to 200: \n"))
             if quest10 == enemy_number:
                 print()
@@ -512,8 +511,8 @@ def thirsty():
     story = open("prophecies/desert/thirsty/thirsty.text", "r")
     print(story.read())
     while True:
-        print(style.GREEN + "Player Score: " + style.RESET, player)
-        print(style.RED + "Enemy Score: " + style.RESET, enemy)
+        print(Style.GREEN + "Player Score: " + Style.RESET, player)
+        print(Style.RED + "Enemy Score: " + Style.RESET, enemy)
         quest11 = input("Pick Heads or Tails! \n")
         coin_choices = ["HEADS", "TAILS"]
         coin_flip = random.choice(coin_choices)
@@ -583,7 +582,7 @@ def dragon():
         if total >= 10:
             print()
             os.system('clear')
-            print(style.GREEN + "Total: " + style.RESET, total)
+            print(Style.GREEN + "Total: " + Style.RESET, total)
             story = open("prophecies/desert/dragon/dragon-w.text", "r")
             print(story.read())
             southern()
@@ -698,8 +697,8 @@ def lich():
     story = open("prophecies/lich/lich.text", "r")
     print(story.read())
     while True:
-        print(style.GREEN + "Player Score: " + style.RESET, player)
-        print(style.RED + "Enemy Score: " + style.RESET, enemy)
+        print(Style.GREEN + "Player Score: " + Style.RESET, player)
+        print(Style.RED + "Enemy Score: " + Style.RESET, enemy)
         quest13 = input("Pick your weapon! Rock, Paper or Scissors!: \n")
         game_choices = ["ROCK", "PAPER", "SCISSORS"]
         enemy_choice = random.choice(game_choices)
