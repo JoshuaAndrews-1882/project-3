@@ -8,6 +8,15 @@ def intro():
     This is the intro to game asking the user if they want to
     play or not.
     """
+    print("""
+  _____       _ _     _  __          __            
+ / ____|     (_) |   | | \ \        / /            
+| |  __ _   _ _| | __| |  \ \  /\  / /_ _ _ __ ___ 
+| | |_ | | | | | |/ _` |   \ \/  \/ / _` | '__/ __|
+| |__| | |_| | | | (_| |    \  /\  / (_| | |  \__ \ 
+ \_____|\__,_|_|_|\__,_|     \/  \/ \__,_|_|  |___/
+\n """)
+    print("            Hello & welcome to Ascalon \n")
     while True:
         print()
         start_game = input("          Do you wish to be a Hero? (Y/N)\n")
@@ -735,13 +744,4 @@ def lich():
 
 
 # title
-print("""
-  _____       _ _     _  __          __            
- / ____|     (_) |   | | \ \        / /            
-| |  __ _   _ _| | __| |  \ \  /\  / /_ _ _ __ ___ 
-| | |_ | | | | | |/ _` |   \ \/  \/ / _` | '__/ __|
-| |__| | |_| | | | (_| |    \  /\  / (_| | |  \__ \ 
- \_____|\__,_|_|_|\__,_|     \/  \/ \__,_|_|  |___/
-\n """)
-print("            Hello & welcome to Ascalon \n")
 intro()
