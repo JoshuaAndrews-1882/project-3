@@ -16,7 +16,7 @@ def intro():
 | |__| | |_| | | | (_| |    \  /\  / (_| | |  \__ \ 
  \_____|\__,_|_|_|\__,_|     \/  \/ \__,_|_|  |___/
 \n """)
-    print("            Hello & welcome to Ascalon \n")
+    print("            Hello & Welcome to Ascalon \n")
     while True:
         print()
         start_game = input("          Do you wish to be a Hero? (Y/N)\n")
