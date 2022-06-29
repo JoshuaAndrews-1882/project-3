@@ -8,14 +8,16 @@ def intro():
     This is the intro to game asking the user if they want to
     play or not.
     """
-    print("""
+    game_title = """
   _____       _ _     _  __          __            
  / ____|     (_) |   | | \ \        / /            
 | |  __ _   _ _| | __| |  \ \  /\  / /_ _ _ __ ___ 
 | | |_ | | | | | |/ _` |   \ \/  \/ / _` | '__/ __|
 | |__| | |_| | | | (_| |    \  /\  / (_| | |  \__ \ 
  \_____|\__,_|_|_|\__,_|     \/  \/ \__,_|_|  |___/
-\n """)
+\n """
+    new_string = game_title.center(28)
+    print(new_string)
     print("            Hello & welcome to Ascalon \n")
     while True:
         print()
