@@ -22,9 +22,9 @@ def intro():
     Logo created using https://www.ascii-art-generator.org/
     """
     print(Style.YELLOW + """
-  _____       _ _     _  __          __            
- / ____|     (_) |   | | \ \        / /            
-| |  __ _   _ _| | __| |  \ \  /\  / /_ _ _ __ ___ 
+  _____       _ _     _  __          __
+ / ____|     (_) |   | | \ \        / /
+| |  __ _   _ _| | __| |  \ \  /\  / /_ _ _ __ ___
 | | |_ | | | | | |/ _` |   \ \/  \/ / _` | '__/ __|
 | |__| | |_| | | | (_| |    \  /\  / (_| | |  \__ \ 
  \_____|\__,_|_|_|\__,_|     \/  \/ \__,_|_|  |___/
@@ -78,7 +78,7 @@ def pre_ascalon():
                     story = open("settings/yesno.text", "r")
                     print(story.read())
                     print()
-                    
+
         elif quest1.upper().strip() == "Y":
             print()
             os.system('clear')
@@ -144,7 +144,7 @@ def shiverpeaks():
         if quest3.upper().strip() == "N":
             print()
             story = open("prophecies/shiverpeaks/shiver-n.text", "r")
-            print(story.read())            
+            print(story.read())
             while True:
                 play_again = input("Restart this quest? (Y/N) \n")
                 if play_again.upper().strip() == "Y":
