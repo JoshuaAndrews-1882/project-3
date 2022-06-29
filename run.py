@@ -9,9 +9,9 @@ class style():
     """
     Text colors
     """
-    YELLOW = '\u001b[33m'
-    GREEN = '\033[32m'
-    RED = '\033[31m'
+    YELLOW = '\u001b[33;1m'
+    GREEN = '\u001b[32;1m'
+    RED = '\u001b[31;1m'
     RESET = '\033[0m'
 
 
