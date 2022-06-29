@@ -1,4 +1,5 @@
 import random
+import os
 
 
 # intro
@@ -11,10 +12,11 @@ def intro():
         print()
         start_game = input("          Do you wish to be a Hero? (Y/N)\n")
         if start_game.upper().strip() == "Y":
+            os.system('clear')
             pre_ascalon()
         elif start_game.upper().strip() == "N":
             print()
-            print("What?")
+            os.system('clear')
             intro()
         else:
             print()
@@ -44,8 +46,10 @@ def pre_ascalon():
             while True:
                 play_again = input("Restart this quest? (Y/N) \n")
                 if play_again.upper().strip() == "Y":
+                    os.system('clear')
                     pre_ascalon()
                 elif play_again.upper().strip() == "N":
+                    os.system('clear')
                     intro()
                 else:
                     print()
@@ -55,6 +59,7 @@ def pre_ascalon():
                     
         elif quest1.upper().strip() == "Y":
             print()
+            os.system('clear')
             story = open("prophecies/pre-ascalon/pre-y.text", "r")
             print(story.read())
             post_ascalon()
@@ -77,6 +82,7 @@ def post_ascalon():
         quest2 = input("Do stay with the King? (Y/N)\n")
         if quest2.upper().strip() == "N":
             print()
+            os.system('clear')
             story = open("prophecies/post-ascalon/post-n.text", "r")
             print(story.read())
             shiverpeaks()
@@ -87,8 +93,10 @@ def post_ascalon():
             while True:
                 play_again = input("Restart this quest? (Y/N) \n")
                 if play_again.upper().strip() == "Y":
+                    os.system('clear')
                     post_ascalon()
                 elif play_again.upper().strip() == "N":
+                    os.system('clear')
                     intro()
                 else:
                     print()
@@ -118,8 +126,10 @@ def shiverpeaks():
             while True:
                 play_again = input("Restart this quest? (Y/N) \n")
                 if play_again.upper().strip() == "Y":
+                    os.system('clear')
                     shiverpeaks()
                 elif play_again.upper().strip() == "N":
+                    os.system('clear')
                     intro()
                 else:
                     print()
@@ -128,6 +138,7 @@ def shiverpeaks():
                     print()
         elif quest3.upper().strip() == "Y":
             print()
+            os.system('clear')
             story = open("prophecies/shiverpeaks/shiver-y.text", "r")
             print(story.read())
             kryta()
@@ -154,8 +165,10 @@ def kryta():
             while True:
                 play_again = input("Restart this quest? (Y/N) \n")
                 if play_again.upper().strip() == "Y":
+                    os.system('clear')
                     kryta()
                 elif play_again.upper().strip() == "N":
+                    os.system('clear')
                     intro()
                 else:
                     print()
@@ -164,6 +177,7 @@ def kryta():
                     print()
         elif quest4.upper().strip() == "Y":
             print()
+            os.system('clear')
             story = open("prophecies/kryta/kryta-y.text", "r")
             print(story.read())
             dorian()
@@ -185,6 +199,7 @@ def dorian():
         quest5 = input("Do you choose to run away? (Y/N)\n")
         if quest5.upper().strip() == "N":
             print()
+            os.system('clear')
             story = open("prophecies/dorian/dorian-n.text", "r")
             print(story.read())
             chosen()
@@ -195,8 +210,10 @@ def dorian():
             while True:
                 play_again = input("Restart this quest? (Y/N) \n")
                 if play_again.upper().strip() == "Y":
+                    os.system('clear')
                     dorian()
                 elif play_again.upper().strip() == "N":
+                    os.system('clear')
                     intro()
                 else:
                     print()
@@ -221,6 +238,7 @@ def chosen():
         quest6 = input("Will you stay and protect the Chosen? (Y/N)\n")
         if quest6.upper().strip() == "N":
             print()
+            os.system('clear')
             story = open("prophecies/chosen/chosen-n.text", "r")
             print(story.read())
             magumma()
@@ -231,8 +249,10 @@ def chosen():
             while True:
                 play_again = input("Restart this quest? (Y/N) \n")
                 if play_again.upper().strip() == "Y":
+                    os.system('clear')
                     chosen()
                 elif play_again.upper().strip() == "N":
+                    os.system('clear')
                     intro()
                 else:
                     print()
@@ -257,6 +277,7 @@ def magumma():
         quest7 = input("Do you kill the Shining Blade? (Y/N)\n")
         if quest7.upper().strip() == "N":
             print()
+            os.system('clear')
             story = open("prophecies/magumma/magumma-n.text", "r")
             print(story.read())
             vizier()
@@ -267,8 +288,10 @@ def magumma():
             while True:
                 play_again = input("Restart this quest? (Y/N) \n")
                 if play_again.upper().strip() == "Y":
+                    os.system('clear')
                     magumma()
                 elif play_again.upper().strip() == "N":
+                    os.system('clear')
                     intro()
                 else:
                     print()
@@ -298,8 +321,10 @@ def vizier():
             while True:
                 play_again = input("Restart this quest? (Y/N) \n")
                 if play_again.upper().strip() == "Y":
+                    os.system('clear')
                     vizier()
                 elif play_again.upper().strip() == "N":
+                    os.system('clear')
                     intro()
                 else:
                     print()
@@ -308,6 +333,7 @@ def vizier():
                     print()
         elif quest8.upper().strip() == "Y":
             print()
+            os.system('clear')
             story = open("prophecies/vizier/vizier-y.text", "r")
             print(story.read())
             dunes()
@@ -368,6 +394,7 @@ def dunes():
 
         if player == 5:
             print()
+            os.system('clear')
             story = open("prophecies/desert/dunes/dunes-w.text", "r")
             print(story.read())
             elona()
@@ -378,8 +405,10 @@ def dunes():
             while True:
                 play_again = input("Restart this quest? (Y/N) \n")
                 if play_again.upper().strip() == "Y":
+                    os.system('clear')
                     dunes()
                 elif play_again.upper().strip() == "N":
+                    os.system('clear')
                     intro()
                 else:
                     print()
@@ -407,6 +436,7 @@ def elona():
             quest10 = int(input("Enter a number between 1 to 200: \n"))
             if quest10 == enemy_number:
                 print()
+                os.system('clear')
                 story = open("prophecies/desert/elona/elona-w.text", "r")
                 print(story.read())
                 thirsty()
@@ -430,8 +460,10 @@ def elona():
             while True:
                 play_again = input("Restart this quest? (Y/N) \n")
                 if play_again.upper().strip() == "Y":
+                    os.system('clear')
                     elona()
                 elif play_again.upper().strip() == "N":
+                    os.system('clear')
                     intro()
                 else:
                     print()
@@ -481,6 +513,7 @@ def thirsty():
 
         if player == 6:
             print()
+            os.system('clear')
             story = open("prophecies/desert/thirsty/thirsty-w.text", "r")
             print(story.read())
             dragon()
@@ -491,8 +524,10 @@ def thirsty():
             while True:
                 play_again = input("Restart this quest? (Y/N) \n")
                 if play_again.upper().strip() == "Y":
+                    os.system('clear')
                     thirsty()
                 elif play_again.upper().strip() == "N":
+                    os.system('clear')
                     intro()
                 else:
                     print()
@@ -525,6 +560,7 @@ def dragon():
         print("Total: ", total)
         if total >= 10:
             print()
+            os.system('clear')
             story = open("prophecies/desert/dragon/dragon-w.text", "r")
             print(story.read())
             southern()
@@ -535,8 +571,10 @@ def dragon():
             while True:
                 play_again = input("Restart this quest? (Y/N) \n")
                 if play_again.upper().strip() == "Y":
+                    os.system('clear')
                     dragon()
                 elif play_again.upper().strip() == "N":
+                    os.system('clear')
                     intro()
                 else:
                     print()
@@ -562,8 +600,10 @@ def southern():
             while True:
                 play_again = input("Restart this quest? (Y/N) \n")
                 if play_again.upper().strip() == "Y":
+                    os.system('clear')
                     southern()
                 elif play_again.upper().strip() == "N":
+                    os.system('clear')
                     intro()
                 else:
                     print()
@@ -572,6 +612,7 @@ def southern():
                     print()
         elif quest12.upper().strip() == "Y":
             print()
+            os.system('clear')
             story = open("prophecies/southern/southern-y.text", "r")
             print(story.read())
             fire()
@@ -590,7 +631,7 @@ def fire():
         print()
         story = open("prophecies/fire/fire.text", "r")
         print(story.read())
-        quest13 = input("and open the Door of Komalie? (Y/N)\n")
+        quest13 = input("Do you open the Door of Komalie? (Y/N)\n")
         if quest13.upper().strip() == "N":
             print()
             story = open("prophecies/fire/fire-n.text", "r")
@@ -598,8 +639,10 @@ def fire():
             while True:
                 play_again = input("Restart this quest? (Y/N) \n")
                 if play_again.upper().strip() == "Y":
+                    os.system('clear')
                     fire()
                 elif play_again.upper().strip() == "N":
+                    os.system('clear')
                     intro()
                 else:
                     print()
@@ -608,6 +651,7 @@ def fire():
                     print()
         elif quest13.upper().strip() == "Y":
             print()
+            os.system('clear')
             story = open("prophecies/fire/fire-y.text", "r")
             print(story.read())
             lich()
@@ -667,6 +711,7 @@ def lich():
 
         if player == 10:
             print()
+            os.system('clear')
             story = open("prophecies/lich/lich-w.text", "r")
             print(story.read())
             intro()
@@ -677,8 +722,10 @@ def lich():
             while True:
                 play_again = input("Restart this quest? (Y/N) \n")
                 if play_again.upper().strip() == "Y":
+                    os.system('clear')
                     lich()
                 elif play_again.upper().strip() == "N":
+                    os.system('clear')
                     intro()
                 else:
                     print()
