@@ -30,9 +30,12 @@ def intro():
  \_____|\__,_|_|_|\__,_|     \/  \/ \__,_|_|  |___/
 \n """ + Style.RESET)
     print("            Hello & Welcome to Prophecies \n")
+    global player_name
     while True:
         print()
-        start_game = input("          Do you wish to be a Hero? (Y/N)\n")
+        player_name = input("Enter your name: \n")
+        print(f"Hi, {player_name} do you wish to be a Hero?")
+        start_game = input("Please enter Y or N \n")
         if start_game.upper().strip() == "Y":
             os.system('clear')
             pre_ascalon()
@@ -380,33 +383,33 @@ def dunes():
     story = open("prophecies/desert/dunes/dunes.text", "r")
     print(story.read())
     while True:
-        print(Style.GREEN + "Player Score: " + Style.RESET, player)
+        print(Style.GREEN + f"{player_name}'s Score: " + Style.RESET, player)
         print(Style.RED + "Enemy Score: " + Style.RESET, enemy)
         quest9 = input("Pick your weapon! Rock, Paper or Scissors!: \n")
         game_choices = ["ROCK", "PAPER", "SCISSORS"]
         enemy_choice = random.choice(game_choices)
         if quest9.upper().strip() == enemy_choice:
-            print(f"You and the enemy threw {quest9}. Keep fighting!")
+            print(f"{player_name} and the enemy threw {quest9}. It's a draw!")
         elif quest9.upper().strip() == "ROCK":
             if enemy_choice == "SCISSORS":
-                print("Rock smashes scissors! You win!")
+                print(f"Rock smashes Scissors! {player_name} wins!")
                 player += 1
             else:
-                print("Paper covers rock! You lose.")
+                print(f"Paper covers Rock! {player_name} loses!")
                 enemy += 1
         elif quest9.upper().strip() == "PAPER":
             if enemy_choice == "ROCK":
-                print("Paper covers rock! You win!")
+                print(f"Paper covers Pock! {player_name} wins!")
                 player += 1
             else:
-                print("Scissors cuts paper! You lose.")
+                print(f"Scissors cuts Paper! {player_name} loses!")
                 enemy += 1
         elif quest9.upper().strip() == "SCISSORS":
             if enemy_choice == "PAPER":
-                print("Scissors cuts paper! You win!")
+                print(f"Scissors cuts Paper! {player_name} wins!")
                 player += 1
             else:
-                print("Rock smashes scissors! You lose.")
+                print(f"Rock smashes Scissors! {player_name} loses!")
                 enemy += 1
 
         else:
@@ -511,21 +514,21 @@ def thirsty():
     story = open("prophecies/desert/thirsty/thirsty.text", "r")
     print(story.read())
     while True:
-        print(Style.GREEN + "Player Score: " + Style.RESET, player)
+        print(Style.GREEN + f"{player_name}'s Score: " + Style.RESET, player)
         print(Style.RED + "Enemy Score: " + Style.RESET, enemy)
         quest11 = input("Pick Heads or Tails! \n")
         coin_choices = ["HEADS", "TAILS"]
         coin_flip = random.choice(coin_choices)
         if quest11.upper().strip() == coin_flip:
-            print("You guess the correct side of the coin!")
+            print(f"{player_name} guessed correctly!")
             player += 1
         elif quest11.upper().strip() == "HEADS":
             if coin_flip == "TAILS":
-                print("You didn't guess the correct side of the coin!")
+                print(f"{player_name} didn't guess correctly!")
                 enemy += 1
         elif quest11.upper().strip() == "TAILS":
             if coin_flip == "HEADS":
-                print("You didn't guess the correct side of the coin!")
+                print(f"{player_name} didn't guess correctly")
                 enemy += 1
 
         else:
@@ -697,33 +700,33 @@ def lich():
     story = open("prophecies/lich/lich.text", "r")
     print(story.read())
     while True:
-        print(Style.GREEN + "Player Score: " + Style.RESET, player)
+        print(Style.GREEN + f"{player_name}'s Score: " + Style.RESET, player)
         print(Style.RED + "Enemy Score: " + Style.RESET, enemy)
         quest13 = input("Pick your weapon! Rock, Paper or Scissors!: \n")
         game_choices = ["ROCK", "PAPER", "SCISSORS"]
         enemy_choice = random.choice(game_choices)
         if quest13.upper().strip() == enemy_choice:
-            print(f"You and the Lich threw {quest13}. Keep fighting!")
+            print(f"{player_name} and the Lich threw {quest13}! It's a draw!")
         elif quest13.upper().strip() == "ROCK":
             if enemy_choice == "SCISSORS":
-                print("Rock smashes scissors! You win!")
+                print(f"Rock smashes Scissors! {player_name} wins!")
                 player += 1
             else:
-                print("Paper covers rock! You lose.")
+                print(f"Paper covers Rock! {player_name} loses!")
                 enemy += 1
         elif quest13.upper().strip() == "PAPER":
             if enemy_choice == "ROCK":
-                print("Paper covers rock! You win!")
+                print(f"Paper covers Rock! {player_name} wins!")
                 player += 1
             else:
-                print("Scissors cuts paper! You lose.")
+                print(f"Scissors cuts Paper! {player_name} loses!")
                 enemy += 1
         elif quest13.upper().strip() == "SCISSORS":
             if enemy_choice == "PAPER":
-                print("Scissors cuts paper! You win!")
+                print(f"Scissors cuts Paper! {player_name} wins!")
                 player += 1
             else:
-                print("Rock smashes scissors! You lose.")
+                print(f"Rock smashes Scissors! {player_name} loses!")
                 enemy += 1
 
         else:
