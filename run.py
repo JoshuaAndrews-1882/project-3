@@ -459,7 +459,7 @@ def elona():
     It requires the player to guess the enemies number
     in 10 guesses or less to win.
     """
-    enemy_number = random.randint(1, 100)
+    enemy_number = random.randint(1, 50)
     attempt = 0
 
     print()
@@ -468,7 +468,7 @@ def elona():
     while True:
         try:
             print(Style.GREEN + "Attempts: " + Style.RESET, attempt)
-            quest10 = int(input("Enter a number between 1 to 100: \n"))
+            quest10 = int(input("Enter a number between 1 to 50: \n"))
             os.system('clear')
             if quest10 == enemy_number:
                 print()
@@ -596,13 +596,11 @@ def dragon():
         total += total_dice
         os.system('clear')
         if total >= 10:
-            print()
             print(Style.GREEN + "Total: " + Style.RESET, total)
             story = open("prophecies/desert/dragon/dragon-w.text", "r")
             print(story.read())
             southern()
         if total < 10:
-            print()
             print(Style.GREEN + "Total: " + Style.RESET, total)
             story = open("prophecies/desert/dragon/dragon-l.text", "r")
             print(story.read())
@@ -716,7 +714,7 @@ def lich():
     print(story.read())
     while True:
         print(Style.GREEN + f"{player_name}'s Score: " + Style.RESET, player)
-        print(Style.RED + "Enemy Score: " + Style.RESET, enemy)
+        print(Style.RED + "Lich Score: " + Style.RESET, enemy)
         quest13 = input("Pick your weapon! Rock, Paper or Scissors!: \n")
         game_choices = ["ROCK", "PAPER", "SCISSORS"]
         enemy_choice = random.choice(game_choices)
@@ -755,6 +753,19 @@ def lich():
             os.system('clear')
             story = open("prophecies/lich/lich-w.text", "r")
             print(story.read())
+            main_menu = input("Return to main menu? (Y/N) \n")
+            if main_menu.upper().strip() == "Y":
+                os.system('clear')
+                intro()
+            elif main_menu.upper().strip() == "N":
+                print("Thanks for playing!")
+                exit()
+            else:
+                print()
+                story = open("settings/yesno.text", "r")
+                print(story.read())
+                print()
+            
             intro()
         elif enemy == 10:
             print()
