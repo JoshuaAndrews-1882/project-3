@@ -468,6 +468,7 @@ def elona():
         try:
             print(Style.GREEN + "Attempts: " + Style.RESET, attempt)
             quest10 = int(input("Enter a number between 1 to 200: \n"))
+            os.system('clear')
             if quest10 == enemy_number:
                 print()
                 os.system('clear')
@@ -526,6 +527,7 @@ def thirsty():
         print(Style.GREEN + f"{player_name}'s Score: " + Style.RESET, player)
         print(Style.RED + "Enemy Score: " + Style.RESET, enemy)
         quest11 = input("Pick Heads or Tails! \n")
+        os.system('clear')
         coin_choices = ["HEADS", "TAILS"]
         coin_flip = random.choice(coin_choices)
         if quest11.upper().strip() == coin_flip:
@@ -771,5 +773,4 @@ def lich():
 
 
 # title
-os.system('clear')
 intro()
