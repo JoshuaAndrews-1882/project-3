@@ -308,6 +308,7 @@ def magumma():
         story = open("prophecies/magumma/magumma.text", "r")
         print(story.read())
         quest7 = input("Do you kill the Shining Blade? (Y/N)\n")
+        os.system('clear')
         if quest7.upper().strip() == "N":
             print()
             os.system('clear')
@@ -347,6 +348,7 @@ def vizier():
         story = open("prophecies/vizier/vizier.text", "r")
         print(story.read())
         quest8 = input("Will you get the sceptor for Vizier? (Y/N)\n")
+        os.system('clear')
         if quest8.upper().strip() == "N":
             print()
             story = open("prophecies/vizier/vizier-n.text", "r")
@@ -626,6 +628,7 @@ def southern():
         story = open("prophecies/southern/southern.text", "r")
         print(story.read())
         quest12 = input("Do you infuse your armor? (Y/N)\n")
+        os.system('clear')
         if quest12.upper().strip() == "N":
             print()
             story = open("prophecies/southern/southern-n.text", "r")
@@ -665,6 +668,7 @@ def fire():
         story = open("prophecies/fire/fire.text", "r")
         print(story.read())
         quest13 = input("Do you open the Door of Komalie? (Y/N)\n")
+        os.system('clear')
         if quest13.upper().strip() == "N":
             print()
             story = open("prophecies/fire/fire-n.text", "r")
