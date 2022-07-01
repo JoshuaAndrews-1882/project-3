@@ -397,6 +397,7 @@ def dunes():
         quest9 = input("Pick your weapon! Rock, Paper or Scissors!: \n")
         game_choices = ["ROCK", "PAPER", "SCISSORS"]
         enemy_choice = random.choice(game_choices)
+        os.system('clear')
         if quest9.upper().strip() == enemy_choice:
             print(f"{player_name} and the enemy threw {quest9}. It's a draw!")
         elif quest9.upper().strip() == "ROCK":
@@ -458,7 +459,7 @@ def elona():
     It requires the player to guess the enemies number
     in 10 guesses or less to win.
     """
-    enemy_number = random.randint(1, 200)
+    enemy_number = random.randint(1, 100)
     attempt = 0
 
     print()
@@ -527,9 +528,9 @@ def thirsty():
         print(Style.GREEN + f"{player_name}'s Score: " + Style.RESET, player)
         print(Style.RED + "Enemy Score: " + Style.RESET, enemy)
         quest11 = input("Pick Heads or Tails! \n")
-        os.system('clear')
         coin_choices = ["HEADS", "TAILS"]
         coin_flip = random.choice(coin_choices)
+        os.system('clear')
         if quest11.upper().strip() == coin_flip:
             print(f"{player_name} guessed correctly!")
             player += 1
@@ -593,6 +594,7 @@ def dragon():
         dice = [dice1, dice2, dice3]
         total_dice = sum(dice)
         total += total_dice
+        os.system('clear')
         if total >= 10:
             print()
             os.system('clear')
@@ -718,6 +720,7 @@ def lich():
         quest13 = input("Pick your weapon! Rock, Paper or Scissors!: \n")
         game_choices = ["ROCK", "PAPER", "SCISSORS"]
         enemy_choice = random.choice(game_choices)
+        os.system('clear')
         if quest13.upper().strip() == enemy_choice:
             print(f"{player_name} and the Lich threw {quest13}! It's a draw!")
         elif quest13.upper().strip() == "ROCK":
