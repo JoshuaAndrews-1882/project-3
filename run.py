@@ -16,12 +16,12 @@ class Style():
 
 # intro
 def intro():
+    os.system('clear')
     """
     This is the intro to game asking the user to enter their
     nname and if they want to play or not.
     Logo created using https://www.ascii-art-generator.org/
     """
-    os.system('clear')
     print(Style.YELLOW + """
   _____       _ _     _  __          __
  / ____|     (_) |   | | \ \        / /
@@ -154,11 +154,9 @@ def shiverpeaks():
                 if play_again.upper().strip() == "Y":
                     os.system('clear')
                     shiverpeaks()
-                    os.system('clear')
                 elif play_again.upper().strip() == "N":
                     os.system('clear')
                     intro()
-                    os.system('clear')
                 else:
                     print()
                     story = open("settings/yesno.text", "r")
@@ -195,11 +193,9 @@ def kryta():
                 if play_again.upper().strip() == "Y":
                     os.system('clear')
                     kryta()
-                    os.system('clear')
                 elif play_again.upper().strip() == "N":
                     os.system('clear')
                     intro()
-                    os.system('clear')
                 else:
                     print()
                     story = open("settings/yesno.text", "r")
@@ -242,11 +238,9 @@ def dorian():
                 if play_again.upper().strip() == "Y":
                     os.system('clear')
                     dorian()
-                    os.system('clear')
                 elif play_again.upper().strip() == "N":
                     os.system('clear')
                     intro()
-                    os.system('clear')
                 else:
                     print()
                     story = open("settings/yesno.text", "r")
@@ -283,11 +277,9 @@ def chosen():
                 if play_again.upper().strip() == "Y":
                     os.system('clear')
                     chosen()
-                    os.system('clear')
                 elif play_again.upper().strip() == "N":
                     os.system('clear')
                     intro()
-                    os.system('clear')
                 else:
                     print()
                     story = open("settings/yesno.text", "r")
@@ -324,11 +316,9 @@ def magumma():
                 if play_again.upper().strip() == "Y":
                     os.system('clear')
                     magumma()
-                    os.system('clear')
                 elif play_again.upper().strip() == "N":
                     os.system('clear')
                     intro()
-                    os.system('clear')
                 else:
                     print()
                     story = open("settings/yesno.text", "r")
