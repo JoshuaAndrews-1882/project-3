@@ -24,6 +24,8 @@
 
 1. Title is yellow as it is a near color to the Guild Wars original title.
 2. General text is white as it looks clean and easy to read against a black background.
+3. Player score is in green.
+4. Enemy score is in red.
 
 ### Features
 
@@ -37,4 +39,4 @@
 
 ### Flow chart
 
-![Flow Chart](assets/images/flowchart.png)
+![Flow Chart](/images/flowchart.png)
