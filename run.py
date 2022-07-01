@@ -603,6 +603,7 @@ def dragon():
             southern()
         if total < 10:
             print()
+            print(Style.GREEN + "Total: " + Style.RESET, total)
             story = open("prophecies/desert/dragon/dragon-l.text", "r")
             print(story.read())
             while True:
