@@ -1,31 +1,40 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Guild Wars
 
-Welcome JoshuaAndrews-1882,
+## About
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+1. This adventure text based game is based on the MMORPG game Guild Wars, which was created by ArenaNet.
+2. It has been built using python and text files.
 
-## Reminders
+## Project Goals
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+### Usage
 
-## Creating the Heroku app
+1. This game was primarily built for people who enjoy the game Guild Wars and would like to play for nostalgia reasons
+2. People that enjoy adventure story games.
+3. In the game there is basic yes and no answer, but also little games to play to complete quests and beat bosses.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+### Site Owner Goals
 
-1. `heroku/python`
-2. `heroku/nodejs`
+1. I wanted to have a clean game that was easy to read and follow.
+2. I wanted to have various elements to the game to keep the player interested.
+3. I wanted to stop any invalid entries ruining the game.
+4. I wanted a restart function for each quest so they player doesn't have to keep starting over.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+### Design
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+1. Title is yellow as it is a near color to the Guild Wars original title.
+2. General text is white as it looks clean and easy to read against a black background.
 
-Connect your GitHub repository and deploy as normal.
+### Features
 
-## Constraints
+1. Player can enter their name.
+2. Some quests require a Y or N answer.
+3. Some quests involve mini-games to beat.
+4. Restart quest option if wrong choice is picked or player loses a mini-game.
+5. Restart game if the game is completed.
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+## Site Design
 
------
-Happy coding!
+### Flow chart
+
+![Flow Chart](assets/images/flowchart.png)
