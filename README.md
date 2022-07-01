@@ -2,8 +2,8 @@
 
 ## About
 
-1. This adventure text based game is based on the MMORPG game Guild Wars, which was created by ArenaNet.
-2. It has been built using python and text files.
+  - This adventure text based game is based on the MMORPG game Guild Wars, which was created by ArenaNet.
+  - It has been built using python and text files.
 
 ## Project Goals
 
