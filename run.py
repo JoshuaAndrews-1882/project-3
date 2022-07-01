@@ -16,12 +16,12 @@ class Style():
 
 # intro
 def intro():
-    os.system('clear')
     """
     This is the intro to game asking the user to enter their
     nname and if they want to play or not.
     Logo created using https://www.ascii-art-generator.org/
     """
+    os.system('clear')
     print(Style.YELLOW + """
   _____       _ _     _  __          __
  / ____|     (_) |   | | \ \        / /
