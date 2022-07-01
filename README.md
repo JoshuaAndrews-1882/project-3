@@ -9,9 +9,9 @@
 
  - __Usage__
 
-  - This game was primarily built for people who enjoy the game Guild Wars and would like to play for nostalgia reasons
-  - People that enjoy adventure story games.
-  - In the game there is basic yes and no answer, but also little games to play to complete quests and beat bosses.
+   - This game was primarily built for people who enjoy the game Guild Wars and would like to play for nostalgia reasons
+   - People that enjoy adventure story games.
+   - In the game there is basic yes and no answer, but also little games to play to complete quests and beat bosses.
 
  - __Site Owner Goals__
 
@@ -20,12 +20,12 @@
    - I wanted to stop any invalid entries ruining the game.
    - I wanted a restart function for each quest so they player doesn't have to keep starting over.
 
-- __Design__
+ - __Design__
 
-  - Title is yellow as it is a near color to the Guild Wars original title.
-  - General text is white as it looks clean and easy to read against a black background.
-  - Player score is in green.
-  - Enemy score is in red.
+   - Title is yellow as it is a near color to the Guild Wars original title.
+   - General text is white as it looks clean and easy to read against a black background.
+   - Player score is in green.
+   - Enemy score is in red.
 
  - __Features__
 
