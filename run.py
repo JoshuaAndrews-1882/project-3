@@ -157,6 +157,7 @@ def shiverpeaks():
                 elif play_again.upper().strip() == "N":
                     os.system('clear')
                     intro()
+                    os.system('clear')
                 else:
                     print()
                     story = open("settings/yesno.text", "r")
