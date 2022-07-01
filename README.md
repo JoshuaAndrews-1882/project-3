@@ -9,16 +9,16 @@
 
  - __Usage__
 
-1. This game was primarily built for people who enjoy the game Guild Wars and would like to play for nostalgia reasons
-2. People that enjoy adventure story games.
-3. In the game there is basic yes and no answer, but also little games to play to complete quests and beat bosses.
+  - This game was primarily built for people who enjoy the game Guild Wars and would like to play for nostalgia reasons
+  - People that enjoy adventure story games.
+  - In the game there is basic yes and no answer, but also little games to play to complete quests and beat bosses.
 
  - __Site Owner Goals__
 
-  - I wanted to have a clean game that was easy to read and follow.
-  - I wanted to have various elements to the game to keep the player interested.
-  - I wanted to stop any invalid entries ruining the game.
-  - I wanted a restart function for each quest so they player doesn't have to keep starting over.
+   - I wanted to have a clean game that was easy to read and follow.
+   - I wanted to have various elements to the game to keep the player interested.
+   - I wanted to stop any invalid entries ruining the game.
+   - I wanted a restart function for each quest so they player doesn't have to keep starting over.
 
 - __Design__
 
