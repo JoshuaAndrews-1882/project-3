@@ -468,7 +468,7 @@ def elona():
     while True:
         try:
             print(Style.GREEN + "Attempts: " + Style.RESET, attempt)
-            quest10 = int(input("Enter a number between 1 to 200: \n"))
+            quest10 = int(input("Enter a number between 1 to 100: \n"))
             os.system('clear')
             if quest10 == enemy_number:
                 print()
@@ -597,7 +597,6 @@ def dragon():
         os.system('clear')
         if total >= 10:
             print()
-            os.system('clear')
             print(Style.GREEN + "Total: " + Style.RESET, total)
             story = open("prophecies/desert/dragon/dragon-w.text", "r")
             print(story.read())
