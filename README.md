@@ -39,4 +39,4 @@
 
 ### Flow chart
 
-![Flow Chart](/images/flowchart.png)
+![Flow Chart](images/flowchart.png)
