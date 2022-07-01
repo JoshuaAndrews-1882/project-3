@@ -21,7 +21,6 @@ def intro():
     nname and if they want to play or not.
     Logo created using https://www.ascii-art-generator.org/
     """
-    os.system('clear')
     print(Style.YELLOW + """
   _____       _ _     _  __          __
  / ____|     (_) |   | | \ \        / /
@@ -772,4 +771,5 @@ def lich():
 
 
 # title
+os.system('clear')
 intro()
