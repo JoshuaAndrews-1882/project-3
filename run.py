@@ -37,6 +37,7 @@ def intro():
         player_name = input("Enter your name: \n")
         print(f"Hi, {player_name} do you wish to be a Hero?")
         start_game = input("Please enter Y or N \n")
+        os.system('clear')
         if start_game.upper().strip() == "Y":
             os.system('clear')
             pre_ascalon()
@@ -65,6 +66,7 @@ def pre_ascalon():
         story = open("prophecies/pre-ascalon/pre.text", "r")
         print(story.read())
         quest1 = input("Do you accept? (Y/N)\n")
+        os.system('clear')
         if quest1.upper().strip() == "N":
             print()
             story = open("prophecies/pre-ascalon/pre-n.text", "r")
@@ -106,6 +108,7 @@ def post_ascalon():
         story = open("prophecies/post-ascalon/post.text", "r")
         print(story.read())
         quest2 = input("Do stay with the King? (Y/N)\n")
+        os.system('clear')
         if quest2.upper().strip() == "N":
             print()
             os.system('clear')
@@ -145,6 +148,7 @@ def shiverpeaks():
         story = open("prophecies/shiverpeaks/shiver.text", "r")
         print(story.read())
         quest3 = input("Do you help the Deldrimor Dwarves (Y/N)\n")
+        os.system('clear')
         if quest3.upper().strip() == "N":
             print()
             story = open("prophecies/shiverpeaks/shiver-n.text", "r")
@@ -184,6 +188,7 @@ def kryta():
         story = open("prophecies/kryta/kryta.text", "r")
         print(story.read())
         quest4 = input("Will you help fight the undead? (Y/N)\n")
+        os.system('clear')
         if quest4.upper().strip() == "N":
             print()
             story = open("prophecies/kryta/kryta-n.text", "r")
@@ -223,6 +228,7 @@ def dorian():
         story = open("prophecies/dorian/dorian.text", "r")
         print(story.read())
         quest5 = input("Do you choose to run away? (Y/N)\n")
+        os.system('clear')
         if quest5.upper().strip() == "N":
             print()
             os.system('clear')
@@ -262,6 +268,7 @@ def chosen():
         story = open("prophecies/chosen/chosen.text", "r")
         print(story.read())
         quest6 = input("Will you stay and protect the Chosen? (Y/N)\n")
+        os.system('clear')
         if quest6.upper().strip() == "N":
             print()
             os.system('clear')
