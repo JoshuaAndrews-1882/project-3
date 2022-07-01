@@ -154,6 +154,7 @@ def shiverpeaks():
                 if play_again.upper().strip() == "Y":
                     os.system('clear')
                     shiverpeaks()
+                    os.system('clear')
                 elif play_again.upper().strip() == "N":
                     os.system('clear')
                     intro()
@@ -194,9 +195,11 @@ def kryta():
                 if play_again.upper().strip() == "Y":
                     os.system('clear')
                     kryta()
+                    os.system('clear')
                 elif play_again.upper().strip() == "N":
                     os.system('clear')
                     intro()
+                    os.system('clear')
                 else:
                     print()
                     story = open("settings/yesno.text", "r")
@@ -239,9 +242,11 @@ def dorian():
                 if play_again.upper().strip() == "Y":
                     os.system('clear')
                     dorian()
+                    os.system('clear')
                 elif play_again.upper().strip() == "N":
                     os.system('clear')
                     intro()
+                    os.system('clear')
                 else:
                     print()
                     story = open("settings/yesno.text", "r")
@@ -278,9 +283,11 @@ def chosen():
                 if play_again.upper().strip() == "Y":
                     os.system('clear')
                     chosen()
+                    os.system('clear')
                 elif play_again.upper().strip() == "N":
                     os.system('clear')
                     intro()
+                    os.system('clear')
                 else:
                     print()
                     story = open("settings/yesno.text", "r")
@@ -317,9 +324,11 @@ def magumma():
                 if play_again.upper().strip() == "Y":
                     os.system('clear')
                     magumma()
+                    os.system('clear')
                 elif play_again.upper().strip() == "N":
                     os.system('clear')
                     intro()
+                    os.system('clear')
                 else:
                     print()
                     story = open("settings/yesno.text", "r")
