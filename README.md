@@ -40,3 +40,9 @@
 ### Flow chart
 
 ![Flow Chart](/assets/images/flowchat.png)
+
+The flow chart shows where the player enters their name and then asked if they want to play or not.
+When a player puts an invalid input it returns to the player input section.
+If the player fails the quest, they are then asked if they want to restart the quest or not.
+If the player completes the quest, they move to the next quest.
+When the player completes the game they are asked if they want to play again or not.
