@@ -41,9 +41,8 @@ def intro():
             os.system('clear')
             pre_ascalon()
         elif start_game.upper().strip() == "N":
-            print()
-            os.system('clear')
-            intro()
+            print("Goodbye")
+            exit()
         else:
             print()
             story = open("settings/yesno.text", "r")
