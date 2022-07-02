@@ -54,3 +54,29 @@
   - If the player fails the quest, they are then asked if they want to restart the quest or not.
   - If the player completes the quest, they move to the next quest.
   - When the player completes the game they are asked if they want to play again or not.
+
+## Bugs
+
+- __Fixed__
+
+  - With restarting quest if a player entered anything other than Y or N it would restart the game.  Required another While True.
+  - Old text would stay on the terminal when restarting the game, required additional os.system('clear') after the question was asked to remove it.
+  - For Elona if a player entered a letter it would respond with too high or too low, it required try/except ValueError for when a player entered non-numerical.
+
+- __Not Fixed__
+
+  - Unaware of any other bugs.
+
+## Future Features
+
+- Player lives so they game restart if a player restarts a quest x amount of times.
+- New quests to different locations.
+- Record what locations the player has fully completed.
+- Add more quests to give the story more depth.
+- Add a player class/weapon system so the story is more personalized.
+
+## Testing
+
+- __Validator Testing__
+
+ - 

@@ -765,7 +765,7 @@ def lich():
                 story = open("settings/yesno.text", "r")
                 print(story.read())
                 print()
-            
+
             intro()
         elif enemy == 10:
             print()
