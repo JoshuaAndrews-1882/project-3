@@ -119,3 +119,24 @@
  - Enable Automatic Deploys so Heroku automatically updates when pushing a new change to code to GitHub.
  - Click view to look.
  - When logging in to Heroku, click Open app in top right of the banner to view the terminal.
+
+The link for this site is - https://guild-wars.herokuapp.com/
+
+## Credits
+
+- __Game Name and Story__
+
+ - The name of the game and story is taken from the MMORPG game Guild Wars developed by ArenaNet.
+ - This game is just for educational use only for the Diploma in Software Development (E-commerce Applications) course with Code Institute.
+
+- __Printing Color Text__
+
+ - https://stackoverflow.com/questions/287871/how-do-i-print-colored-text-to-the-terminal
+
+- __Clearing Text__
+
+ - https://replit.com/talk/ask/How-do-I-make-my-text-in-Python-disappear-when-the-user-presses-a-key/43147
+
+- __Dice Roll Mini Game__
+
+ - https://stackoverflow.com/questions/44008489/dice-rolling-simulator-in-python
