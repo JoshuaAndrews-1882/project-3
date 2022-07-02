@@ -40,7 +40,7 @@
 ![Rll Dice](/assets/images/roll.PNG)
    - Restart quest option if wrong choice is picked or player loses a mini-game.
 ![Restart Quest](/assets/images/restart.PNG)
-   - Restart game if the game is completed.
+   - Restart game if the game is completed.<br>
 ![Restart Game](/assets/images/complete.PNG)
 
 ## Site Design
