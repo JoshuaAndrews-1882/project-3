@@ -93,8 +93,29 @@
  - GitPod
   - Developlent Tool
  - Heroku
-  - Deploy Code in a terminal
+  - Deploy code in a terminal
  - PIP8 Online
   - Validate Python code
  - Lucid
   - Create game flow chart
+
+
+## Deployment
+
+- __GitHub and GitPod:__
+
+  - Create new repository from the Code Institute Python template.
+  - Create workspace in GitPod.
+  - Add, commit and push changes made on GitPod to GitHub.
+
+- __Heroku__
+
+ - Create a new app in Heroku.
+ - Name the app, select region and then click create app.
+ - In Settings click Config VARS and set Key as PORT and Value as 8000.
+ - Add Buildpack, heroku/python and heroku/nodejs.  Ensure it is the correct order as written.
+ - In Deploy section, select GitHub and connect.
+ - Search for GitHub repository name and press connect to link Heroku to GitHub.
+ - Enable Automatic Deploys so Heroku automatically updates when pushing a new change to code to GitHub.
+ - Click view to look.
+ - When logging in to Heroku, click Open app in top right of the banner to view the terminal.
