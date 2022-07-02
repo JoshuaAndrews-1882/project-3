@@ -30,19 +30,27 @@
  - __Features__
 
    - Player can enter their name.
+![Enter Name](/assets/images/entername.PNG)
    - Some quests require a Y or N answer.
+![Yes or No](/assets/images/yn.PNG)
    - Some quests involve mini-games to beat.
+![Rock, Paper, Scissors](/assets/images/rps.PNG)
+![Number Guess](/assets/images/number.PNG)
+![Heads or Tails](/assets/images/headstails.PNG)
+![Rll Dice](/assets/images/roll.PNG)
    - Restart quest option if wrong choice is picked or player loses a mini-game.
+![Restart Quest](/assets/images/restart.PNG)
    - Restart game if the game is completed.
+![Restart Game](/assets/images/complete.PNG)
 
 ## Site Design
 
  - __Flow chart__
 
-![Flow Chart](/assets/images/flowchat.png)
+![Flow Chart](/assets/images/flowchart.png)
 
-   - The flow chart shows where the player enters their name and then asked if they want to play or not.
-   - When a player puts an invalid input it returns to the player input section.
-   - If the player fails the quest, they are then asked if they want to restart the quest or not.
-   - If the player completes the quest, they move to the next quest.
-   - When the player completes the game they are asked if they want to play again or not.
+  - The flow chart shows where the player enters their name and then asked if they want to play or not.
+  - When a player puts an invalid input it returns to the player input section.
+  - If the player fails the quest, they are then asked if they want to restart the quest or not.
+  - If the player completes the quest, they move to the next quest.
+  - When the player completes the game they are asked if they want to play again or not.
