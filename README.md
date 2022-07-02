@@ -86,18 +86,18 @@
 
  - Python
  - Python Libraries
-  - random
-  - os
+   - random
+   - os
  - GitHub
-  - Version control
+   - Version control
  - GitPod
-  - Developlent Tool
+   - Developlent Tool
  - Heroku
-  - Deploy code in a terminal
+   - Deploy code in a terminal
  - PIP8 Online
-  - Validate Python code
+   - Validate Python code
  - Lucid
-  - Create game flow chart
+   - Create game flow chart
 
 
 ## Deployment
