@@ -79,4 +79,22 @@
 
 - __Validator Testing__
 
- - 
+ - Validated code through PEP8 Online.
+![PEP8](/assets/images/PEP8.PNG)
+
+## Technologies Used
+
+ - Python
+ - Python Libraries
+  - random
+  - os
+ - GitHub
+  - Version control
+ - GitPod
+  - Developlent Tool
+ - Heroku
+  - Deploy Code in a terminal
+ - PIP8 Online
+  - Validate Python code
+ - Lucid
+  - Create game flow chart
