@@ -140,3 +140,7 @@ The link for this site is - https://guild-wars.herokuapp.com/
 - __Dice Roll Mini Game__
 
   - https://stackoverflow.com/questions/44008489/dice-rolling-simulator-in-python
+
+- __Game Title Design__
+
+  - https://www.ascii-art-generator.org/
