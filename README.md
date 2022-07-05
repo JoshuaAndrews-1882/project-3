@@ -69,7 +69,7 @@
 
 ## Future Features
 
-- Player lives so they game restart if a player restarts a quest x amount of times.
+- Have player lives, so the game restarts from the start if a player restarts a quest x amount of times.
 - New quests to different locations.
 - Record what locations the player has fully completed.
 - Add more quests to give the story more depth.
@@ -86,8 +86,8 @@
 
  - Python
  - Python Libraries
-   - random
-   - os
+   - Random
+   - OS
  - GitHub
    - Version control
  - GitPod
